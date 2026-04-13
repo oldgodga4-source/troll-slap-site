@@ -1,25 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Troll Slap Tower</title>
+<meta charset="UTF-8">
+<title>Troll Slap Tower</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #00c3ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background: #0099cc;
+  transform: scale(1.05);
+}
+</style>
+
 </head>
-<body style="text-align:center; font-family:sans-serif;">
 
-  <h1>🔥 Troll Slap Tower 🔥</h1>
+<body>
 
-  <button onclick="joinGame()">OYUNA GİR +50 COIN</button>
+<div class="card">
 
-  <script>
-    function joinGame() {
-      // Roblox oyun linki
-      window.location.href = "https://www.roblox.com/share?code=bb030c88d3ef3f429b9689e43e605d63&type=ExperienceDetails&stamp=1776101283104";
+  <h1>🔥 Troll Slap Tower</h1>
 
-      // Backend'e istek (coin için)
-      fetch("https://SENIN-SERVERIN.com/reward", {
-        method: "POST"
-      });
-    }
-  </script>
+  <p>
+    Click the button below to join the game and claim your reward!
+  </p>
+
+  <button onclick="joinGame()">
+    🎮 OYUNA GİR +50 COIN
+  </button>
+
+</div>
+
+<script>
+function joinGame() {
+  window.location.href = "https://www.roblox.com/share?code=bb030c88d3ef3f429b9689e43e605d63&type=ExperienceDetails&stamp=1776101283104";
+
+  fetch("https://SENIN-SERVERIN.com/reward", {
+    method: "POST"
+  });
+}
+</script>
 
 </body>
 </html>
+
