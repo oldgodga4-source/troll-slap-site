@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Troll Slap Tower</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+
+  <h1>🔥 Troll Slap Tower 🔥</h1>
+
+  <button onclick="joinGame()">OYUNA GİR +50 COIN</button>
+
+  <script>
+    function joinGame() {
+      // Roblox oyun linki
+      window.location.href = "https://www.roblox.com/share?code=bb030c88d3ef3f429b9689e43e605d63&type=ExperienceDetails&stamp=1776101283104";
+
+      // Backend'e istek (coin için)
+      fetch("https://SENIN-SERVERIN.com/reward", {
+        method: "POST"
+      });
+    }
+  </script>
+
+</body>
+</html>
